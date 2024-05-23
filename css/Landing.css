@@ -22,6 +22,10 @@
 .nav-links li{
     display: inline-block;
     margin-right: 45px;
+    transition: 0.25s;
+}
+.nav-links li:hover{
+    color: #f1791d;
 }
 .nav-links{
     display: flex;
@@ -109,4 +113,91 @@
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+/*Discover setion*/
+.discover{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 50px;
+}
+.discover-content{
+    margin-top: 1rem;
+    margin-bottom: 30px;
+    line-height: 35px;
+    text-align: center;
+    /* border: 2px solid blue; */
+    width: 40rem;
+}
+.discover-content h3{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.discover-content p{
+    line-height: 1.5rem;
+    color: grey;
+    margin-bottom: 1rem;
+}
+.discover-cards{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.card{
+    /* border: 2px solid blue; */
+    flex: 1;
+    min-width: 30%;
+    max-width: 30%;
+    height: 28rem;
+}
+
+.card .org-img{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/bg_7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+}
+.card .org-title{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 22px;
+}
+.card .org-description{
+    font-weight: lighter;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+.card .card-btn{
+    text-decoration: none;
+    color: #f1791d;
+}
+
+.discover-btn{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #f1791d;
+    border: 1px solid #f1791d;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: ease-in 0.25s;
+}
+.discover-btn:hover{
+    background-color: #f1791d;
+    color: white;
+    transform: translateY(-0.5rem);
+}
+.discover-btn:active{
+    transform: translateY(0rem);
 }
