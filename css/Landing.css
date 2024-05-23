@@ -10,14 +10,14 @@
     background: none;
 }
 .navbar .nav-elm{
-    padding: 15px;
+    padding: 20px;
     width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 100%;
-    flex-grow: 1;
+    /* flex-basis: 100%;
+    flex-grow: 1; */
 }
 .nav-links li{
     display: inline-block;
@@ -75,6 +75,9 @@
 
 .hero-text2{
     animation: moveInRight 1.5s ease-in;
+}
+.active{
+    color: #f1791d;
 }
 
 @keyframes moveInLeft{
