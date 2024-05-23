@@ -1,38 +1,3 @@
-
-.logo{
-    margin-left: 50px;
-    text-align: left;
-}
-.navbar{
-    width: 100%;
-    color: whitesmoke;
-    position: absolute;
-    background: none;
-}
-.navbar .nav-elm{
-    padding: 20px;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* flex-basis: 100%;
-    flex-grow: 1; */
-}
-.nav-links li{
-    display: inline-block;
-    margin-right: 45px;
-    transition: 0.25s;
-}
-.nav-links li:hover{
-    color: #f1791d;
-}
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .hero{
     /* border: 2px solid blue; */
     height: 100vh;
@@ -65,8 +30,8 @@
 }
 
 .hero .hero-btn:hover{
-    color: #f1791d;
-    border-color: #f1791d;
+    color: #f86f2d;
+    border-color: #f86f2d;
     transform: translateY(-5px);
 }
 .hero .hero-btn:active{
@@ -80,9 +45,7 @@
 .hero-text2{
     animation: moveInRight 1.5s ease-in;
 }
-.active{
-    color: #f1791d;
-}
+
 
 @keyframes moveInLeft{
     0%{
@@ -117,7 +80,7 @@
 
 /*Discover setion*/
 .discover{
-    background-color: whitesmoke;
+    background-color: #f9f9ff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,20 +144,20 @@
 }
 .card .card-btn{
     text-decoration: none;
-    color: #f1791d;
+    color: #f86f2d;
 }
 
 .discover-btn{
     margin-top: 1rem;
     text-decoration: none;
-    color: #f1791d;
-    border: 1px solid #f1791d;
+    color: #f86f2d;
+    border: 1px solid #f86f2d;
     padding: 1rem 2rem;
     border-radius: 2rem;
     transition: ease-in 0.25s;
 }
 .discover-btn:hover{
-    background-color: #f1791d;
+    background-color: #f86f2d;
     color: white;
     transform: translateY(-0.5rem);
 }

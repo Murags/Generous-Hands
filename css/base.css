@@ -4,3 +4,7 @@
     margin: 0;
     font-family: "Overpass";
 }
+a{
+    text-decoration: none;
+    color: white;
+}
