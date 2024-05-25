@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body>
+    <div class="body-container">
+        <div class="topbar">
+            <div class="menu-icon">
+                <div class="logo">
+                    <span>Dashboard</span>
+                  </div>
+              <!-- <i class="fas fa-bars"></i> -->
+            </div>
+            <div class="profile-icon">
+              <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <ul class="menu">
+                  <li class="active"><i class="fas fa-home"></i> Home</li>
+                  <li><i class="fas fa-cogs"></i> Settings</li>
+                  <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+                </ul>
+              </div>
+            <section class="content">
+                <div id="map"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/maps.js"></script>
+  </body>
+</html>
