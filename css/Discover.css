@@ -28,6 +28,7 @@
     transition: ease-in 0.25s;
 }
 .hero-text{
+    font-family: "Dosis";
     font-size: 50px;
     animation: moveInLeft 1.5s ease-in;
 }

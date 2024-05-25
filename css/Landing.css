@@ -38,11 +38,13 @@
     transform: translateY(0px);
 }
 .hero-text{
+    font-family: "Dosis";
     font-size: 50px;
     animation: moveInLeft 1.5s ease-in;
 }
 
 .hero-text2{
+    font-family: "Dosis";
     animation: moveInRight 1.5s ease-in;
 }
 
