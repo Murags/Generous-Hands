@@ -127,7 +127,26 @@
 .card .org-img{
     /* border: 2px solid brown; */
     height: 50%;
-    background-image: url("../Images/bg_7.jpg");
+    background-image: url("../Images/Poverty.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+}
+.card .org-img-2{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/Education.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+}
+
+.card .org-img-3{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/Child4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
