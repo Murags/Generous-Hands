@@ -77,6 +77,10 @@ main {
     bottom: 0;
     width: 100%;
 }
+.text_title{
+    font-size: 20px;
+    text-align: left;
+}
 
 .bg {
     position: absolute;
