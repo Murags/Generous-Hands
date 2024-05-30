@@ -35,54 +35,107 @@
       <div class="container">
         <div class="sidebar">
           <ul class="menu">
-            <li class="active"><i class="fas fa-home"></i> Home</li>
-            <li><i class="fas fa-cogs"></i> Settings</li>
-            <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-donate"></i>Donation</li>
+            <li><i class="fas fa-cogs"></i>Analytics</li>
+            <li><i class="fas fa-sign-out-alt"></i>Logout</li>
           </ul>
         </div>
-        <section class="content">
-          <div class="search">
-            <div class="select-wrapper">
-              <select id="continent" onchange="updateCountries()">
-                <option value="">
-                  <i class="fa fa-globe"></i>Select a continent
-                </option>
+        <main class="content">
+          <section id="HomeContent">
+            <div class="search Home-content">
+              <div class="select-wrapper">
+                <select id="continent" onchange="updateCountries()">
+                  <option value="">
+                    <i class="fa fa-globe"></i>Select a continent
+                  </option>
+                </select>
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="select-wrapper">
+                <select id="country" onchange="updateRegions()">
+                  <option value="">
+                    <i class="fas fa-flag"></i>Select a country
+                  </option>
+                </select>
+                <i class="fas fa-flag"></i>
+              </div>
+              <div class="select-wrapper">
+                <select id="region" onchange="filterMap()">
+                  <option value="">
+                    <i class="fas fa-map-marker-alt"></i>Select a region
+                  </option>
+                </select>
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="input-wrapper">
+                <i class="fas fa-search"></i>
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Search by donor name"
+                  onkeyup="filterMap()"
+                />
+              </div>
+            </div>
+            <div id="map"></div>
+          </section>
+          <section id="DonationContent">
+            <div class="summary-section">
+              <div>Total Donations: <span id="totalDonations"></span></div>
+              <div>Average Quantity: <span id="averageQuantity"></span></div>
+              <div>Number of Donors: <span id="numberOfDonors"></span></div>
+            </div>
+            <div class="filter-options">
+              <input type="text" id="searchDonations" placeholder="Search donations...">
+              <select id="filterPickupStatus">
+                <option value="">All Pickup Statuses</option>
+                <option value="Scheduled">Scheduled</option>
+                <option value="Completed">Completed</option>
+                <option value="Not Needed">Not Needed</option>
               </select>
-              <i class="fas fa-globe"></i>
-            </div>
-            <div class="select-wrapper">
-              <select id="country" onchange="updateRegions()">
-                <option value="">
-                  <i class="fas fa-flag"></i>Select a country
-                </option>
+              <select id="filterDeliveryStatus">
+                <option value="">All Delivery Statuses</option>
+                <option value="In Transit">In Transit</option>
+                <option value="Delivered">Delivered</option>
+                <option value="Not Required">Not Required</option>
               </select>
-              <i class="fas fa-flag"></i>
+              <button id="applyFilters">Apply Filters</button>
             </div>
-            <div class="select-wrapper">
-              <select id="region" onchange="filterMap()">
-                <option value="">
-                  <i class="fas fa-map-marker-alt"></i>Select a region
-                </option>
-              </select>
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="input-wrapper">
-              <i class="fas fa-search"></i>
-              <input
-                type="text"
-                id="search"
-                placeholder="Search by donor name"
-                onkeyup="filterMap()"
-              />
-            </div>
-          </div>
 
-          <div id="map"></div>
-        </section>
+            <div class="table-container">
+              <table id="donationTable">
+                <thead>
+                  <tr>
+                    <th>Donor Name</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Region</th>
+                    <th>Details</th>
+                    <th>Contact</th>
+                    <th>Pickup Status</th>
+                    <th>Delivery Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Donation rows will be populated here -->
+                </tbody>
+              </table>
+              <div class="pagination-controls">
+                <!-- Pagination controls will be populated here -->
+              </div>
+            </div>
+          </section>
+
+          <section id="AnalyticsContent">Analytics Area</section>
+          <section id="LogoutContent">Logout</section>
+
+        </main>
       </div>
     </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="./js/maps.js"></script>
+    <script src="./js/dashboard.js"></script>
   </body>
 </html>
