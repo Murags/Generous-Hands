@@ -81,13 +81,12 @@
             <div id="map"></div>
           </section>
           <section id="DonationContent">
-            <div class="summary-section">
-              <div>Total Donations: <span id="totalDonations"></span></div>
-              <div>Average Quantity: <span id="averageQuantity"></span></div>
-              <div>Number of Donors: <span id="numberOfDonors"></span></div>
-            </div>
             <div class="filter-options">
-              <input type="text" id="searchDonations" placeholder="Search donations...">
+              <input
+                type="text"
+                id="searchDonations"
+                placeholder="Search donations..."
+              />
               <select id="filterPickupStatus">
                 <option value="">All Pickup Statuses</option>
                 <option value="Scheduled">Scheduled</option>
@@ -127,14 +126,57 @@
             </div>
           </section>
 
-          <section id="AnalyticsContent">Analytics Area</section>
-          <section id="LogoutContent">Logout</section>
+          <section id="AnalyticsContent">
+            <!-- <p>Dashboard Overview</p> -->
+            <div class="region-summaries">
+              <div class="summary-section">
+                <div class="totalDonations">
+                  Total Donations:
+                  <div class="metrics">
+                    <span id="totalDonations"></span>
+                    <i class="fas fa-donate"></i>
+                  </div>
+                </div>
+                <div class="averageQuantity">
+                  Average Quantity:
+                  <div class="metrics">
+                    <span id="averageQuantity"></span>
+                    <i class="fas fa-balance-scale"></i>
+                  </div>
+                </div>
+                <div class="numberOfDonors">
+                  Number of Donors:
+                  <div class="metrics">
+                    <span id="numberOfDonors"></span>
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="map-container">
+                <h3>Donations by Region</h3>
+                <div id="choroplethMap"></div>
+              </div>
+            </div>
+            <div class="analytics-container">
+              <div class="chart-container">
+                <h3>Monthly Donations</h3>
+                <canvas id="donationsLineChart"></canvas>
+              </div>
+              <div class="chart-container">
+                <h3>Donation Categories</h3>
+                <canvas id="categoriesBarChart"></canvas>
+              </div>
+            </div>
+          </section>
 
+          <section id="LogoutContent">Logout</section>
         </main>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/data.js"></script>
     <script src="./js/maps.js"></script>
     <script src="./js/dashboard.js"></script>
   </body>
