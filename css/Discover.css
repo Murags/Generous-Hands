@@ -32,128 +32,100 @@
     font-size: 50px;
     animation: moveInLeft 1.5s ease-in;
 }
-
-main {
+.discover{
+    background-color: #f9f9ff;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 20px;
-}
-.card {
-    position: relative;
-    width: calc((90% / 3) - 20px); /*This Would Help to adjust the width so that we will have only 3 cards per line/row*/
-    height: 350px;
-    border-radius: 14px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row; /* Use column to align items vertically */
     align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: 20px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #fffffff4;
+    /* border: 2px solid red; */
+    padding: 50px;
 }
 
-.content {
-    position: relative;
-    z-index: 3;
-    text-align: center;
+.discover-cards{
+    /* border: 2px solid red; */
     width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+   
+    border-color: bisque;
+    
+}
+.card{
+    /* border: 2px solid blue; */
+    flex: 1;
+    min-width: 30%;
+    max-width: 30%;
+    height: 28rem;
+    border: 2px;
+    border-radius: 14px;
 }
 
-.content img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
+.card .org-img{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/Child3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+}
+.card .org-img-2{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/Orphans.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
 }
 
-.text {
-    padding: 10px;
-    background: rgb(255, 255, 255);
-    backdrop-filter: blur(5px);
-    border-radius: 0 0 10px 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.card .org-img-3{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/RemoteSchool.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
 }
-.text_title{
-    font-size: 20px;
-    text-align: left;
+.card .org-img-4{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/OldageHomes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
 }
-
-.bg {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    z-index: 2;
-    background: rgba(255, 255, 255, .95);
-    backdrop-filter: blur(24px);
-    border-radius: 10px;
-    overflow: hidden;
-    outline: 2px solid white;
+.card .org-img-5{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/Thirsty2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
 }
-
-.blob {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 350px;
-    border-radius: 50%;
-    background-color: #fa6203;
-    opacity: 1;
-    filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
+.card .org-img-6{
+    /* border: 2px solid brown; */
+    height: 50%;
+    background-image: url("../Images/Hunger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
 }
-.card:hover {
-    background-color: #fe6608;
+.card .org-title{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 22px;
 }
-/* .card:hover .content img {
-    transform: scale(1.05);
-}
-.donate-btn {
-    background-color: #fa6203;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: none;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.card:hover .donate-btn {
-    display: block;
-}
-
-.donate-btn:hover {
-    background-color: #d95402;
-} */
-@keyframes blob-bounce {
-    0% {
-        transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-    25% {
-        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-    50% {
-        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-    75% {
-        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-    100% {
-        transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
+.card .org-description{
+    font-weight: lighter;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
 }
