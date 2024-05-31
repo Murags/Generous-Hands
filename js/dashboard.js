@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  function hideAll(){
+    document.querySelectorAll("main section").forEach((section) => {
+      section.style.display = "none";
+    });
+  }
+
   document.querySelector(".sidebar li").classList.add("active-dash");
 
   const navItems = document.querySelectorAll(".sidebar li");
@@ -16,14 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetId = navLi.innerText;
       const visibleSection = document.querySelector(`#${targetId}Content`);
 
-      document.querySelectorAll("main section").forEach((section) => {
-        section.style.display = "none";
-      });
+      hideAll();
 
       navLi.classList.add("active-dash");
       visibleSection.style.display = "block";
     });
   });
+
+  // // Hide all sections and show the default section
+  hideAll();
+  document.querySelector("#AnalyticsContent").style.display = "block";
+  document.querySelector(".sidebar li").classList.add("active-dash");
 
   const table = document.getElementById("donationTable");
   const searchInput = document.getElementById("searchDonations");

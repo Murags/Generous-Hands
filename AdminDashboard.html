@@ -35,14 +35,57 @@
       <div class="container">
         <div class="sidebar">
           <ul class="menu">
-            <li><i class="fas fa-home"></i>Home</li>
-            <li><i class="fas fa-donate"></i>Donation</li>
-            <li><i class="fas fa-cogs"></i>Analytics</li>
+            <li><i class="fas fa-chart-line"></i>Analytics</li>
+            <li><i class="fas fa-map-marker-alt"></i>Maps</li>
+            <li><i class="fas fa-th-list"></i>Donation</li>
             <li><i class="fas fa-sign-out-alt"></i>Logout</li>
           </ul>
         </div>
         <main class="content">
-          <section id="HomeContent">
+          <section id="AnalyticsContent">
+            <!-- <p>Dashboard Overview</p> -->
+            <div class="region-summaries">
+              <div class="summary-section">
+                <div class="totalDonations">
+                  Total Donations:
+                  <div class="metrics">
+                    <span id="totalDonations"></span>
+                    <i class="fas fa-donate"></i>
+                  </div>
+                </div>
+                <div class="averageQuantity">
+                  Average Quantity:
+                  <div class="metrics">
+                    <span id="averageQuantity"></span>
+                    <i class="fas fa-balance-scale"></i>
+                  </div>
+                </div>
+                <div class="numberOfDonors">
+                  Number of Donors:
+                  <div class="metrics">
+                    <span id="numberOfDonors"></span>
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="map-container">
+                <h3>Donations by Region</h3>
+                <div id="choroplethMap"></div>
+              </div>
+            </div>
+            <div class="analytics-container">
+              <div class="chart-container">
+                <h3>Monthly Donations</h3>
+                <canvas id="donationsLineChart"></canvas>
+              </div>
+              <div class="chart-container">
+                <h3>Donation Categories</h3>
+                <canvas id="categoriesBarChart"></canvas>
+              </div>
+            </div>
+          </section>
+
+          <section id="MapsContent">
             <div class="search Home-content">
               <div class="select-wrapper">
                 <select id="continent" onchange="updateCountries()">
@@ -80,6 +123,8 @@
             </div>
             <div id="map"></div>
           </section>
+
+
           <section id="DonationContent">
             <div class="filter-options">
               <input
@@ -122,49 +167,6 @@
               </table>
               <div class="pagination-controls">
                 <!-- Pagination controls will be populated here -->
-              </div>
-            </div>
-          </section>
-
-          <section id="AnalyticsContent">
-            <!-- <p>Dashboard Overview</p> -->
-            <div class="region-summaries">
-              <div class="summary-section">
-                <div class="totalDonations">
-                  Total Donations:
-                  <div class="metrics">
-                    <span id="totalDonations"></span>
-                    <i class="fas fa-donate"></i>
-                  </div>
-                </div>
-                <div class="averageQuantity">
-                  Average Quantity:
-                  <div class="metrics">
-                    <span id="averageQuantity"></span>
-                    <i class="fas fa-balance-scale"></i>
-                  </div>
-                </div>
-                <div class="numberOfDonors">
-                  Number of Donors:
-                  <div class="metrics">
-                    <span id="numberOfDonors"></span>
-                    <i class="fas fa-users"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="map-container">
-                <h3>Donations by Region</h3>
-                <div id="choroplethMap"></div>
-              </div>
-            </div>
-            <div class="analytics-container">
-              <div class="chart-container">
-                <h3>Monthly Donations</h3>
-                <canvas id="donationsLineChart"></canvas>
-              </div>
-              <div class="chart-container">
-                <h3>Donation Categories</h3>
-                <canvas id="categoriesBarChart"></canvas>
               </div>
             </div>
           </section>
