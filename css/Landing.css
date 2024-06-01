@@ -185,3 +185,62 @@
 .discover-btn:active{
     transform: translateY(0rem);
 }
+.footer_design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #242424;
+    border-top: 1px solid #e7e7e7;
+    color: whitesmoke;
+}
+.footer_design div {
+    flex: 1 1 20%;
+    margin: 10px;
+}
+.footer_design strong {
+    display: block;
+    margin-bottom: 10px;
+}
+.no_bullets {
+    list-style-type: none;
+    padding: 0;
+}
+.no_bullets li {
+    margin: 5px 0;
+}
+.no_bullets li a {
+    text-decoration: none;
+    
+}
+.no_bullets li a:hover {
+   color: rgb(245, 141, 5); 
+}
+.no_bullets li span {
+    margin-right: 10px;
+}
+svg {
+    margin-right: 10px;
+   
+}
+.social_icons {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    justify-content: space-around;
+    margin-right: 10px;
+    
+}
+.social_icons svg {
+    width: 24px;
+    height: 24px;
+   
+    margin-top: 0px;
+}
+.footer_bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.9em;
+  
+}
