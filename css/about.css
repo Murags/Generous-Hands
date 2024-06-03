@@ -46,38 +46,36 @@
     animation: moveInRight 1.5s ease-in;
 }
 
-
-/* About Content*/
-.about{
-    background-color: #f9f9ff;
-    /* border: 2px solid red; */
-    padding: 4rem 3rem;
-}
-.about-content{
-    /* border: 2px solid black; */
-    width: 100%;
+/* .founders{
+    margin-top: 20px;
+    background-color: whitesmoke;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.staff-img{
-    height: 33rem;
-    flex: 1;
-    background-image: url("../Images/group-happy-diverse-volunteers.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 1rem;
-}
-.about-content .about-text h1{
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-.about-text{
-    flex: 1;
-    padding: 2rem;
-    line-height: 2rem;
-    font-weight: lighter;
+    flex-flow: column wrap;
 }
 
+ */
+ .founders {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.founder_pair {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.founder_pair img {
+    margin-right: 20px;
+}
+
+.founder_text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: #333;
+}
