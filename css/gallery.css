@@ -1,35 +1,22 @@
-.hero
-{
+.hero{
+    /* border: 2px solid blue; */
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../Images/need4.jpg");
+    background-image: url("../Images/happyKids.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.hero .hero-content:not(hero:below-hero){
+.hero .hero-content{
     padding: 20px;
     color: whitesmoke;
     text-align: center;
     font-size: 20px;
     line-height: 50px;
 }
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    border: 1.5px solid whitesmoke;
-    color: whitesmoke;
-    margin-top: 20px;
-    margin: left 200px;
-    padding: 5px 20px;
-    border-radius: 30px;
-    animation: moveInBottom 1.5s ease-in;
-    transition: ease-in 0.25s;
-}
-
 
 .below-hero
 {
@@ -40,23 +27,19 @@
     padding: 5px 20px;
 }
 .hero-text{
-    font-family: "Sans serif";
-    display: inline-block;
-    font-size: 20px;
-    opacity: 1;
-    animation: moveInLeft 1.5s ease-in;
+    font-family: "Dosis";
+    font-size: 50px;
 }
 
-main {
+.card-images{
+    /* border: 2px solid red; */
+    margin: 4rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height:1300px;
-    width:1400px;
-    gap: 0px;
-    margin-left: 40px;
 }
 .card {
+<<<<<<< HEAD
     position: relative;
     width: calc((120% / 3) - 20px); 
     height: 350px;
@@ -69,15 +52,20 @@ main {
     margin-top: 0px;
     margin-left: 0px;
     
+=======
+
+    flex: 1;
+    height: auto;
+    /* opacity: .9; */
+    transition: ease-in 0.25s;
+>>>>>>> 05adf3ddf5fa4c1e8e8ccd2f6dcb4056122f6cbe
 }
 
 .card:hover {
-    background-color: #fe6608;
+    opacity: 1;
 }
 
 .content {
-    position: relative;
-    z-index: 3;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -86,8 +74,9 @@ main {
 .content img {
     width: 100%;
     height: 100%;
-    border-radius: 0px 0px;
-    
+}
+.content img::after{
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
 }
 
 .bg {
@@ -120,59 +109,82 @@ main {
 }
 
 
-.beforefooter 
-{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../Images/Helping Kids.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-    z-index: 1;
-}
-
-.beforefooter .insidefooter
-{
-    padding: 20px;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 20px;
-    line-height: 50px;
-    opacity: 1;
-    z-index: 4;
-    margin-right: 800px;
-
-}
-
-.Content2 img
-{
-    margin-top: 400px;
-    
-}
-
-.Right
+.beforefooter
 {
     position: relative;
-    left: 800px;
-    margin-left: 70px;
-    bottom: 400px;
+    width: 100%;
+    background-image: url("../Images/group-happy-diverse-volunteers.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* z-index: -101; */
+}
+.overlay{
+    /* z-index: -100; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .9;
+    background: #f86f2d;
+}
+.beforefooter .insidefooter
+{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8rem 6rem;
+    gap: 2rem;
+}
+.volunteer-container{
+    z-index: 200;
+    width: 60%;
+}
+.volunteer-container img{
+    width: 100%;
+}
+.volunteer-form{
+    color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .textbox {
-    width: 500px;
-    height: 50px;
-    border: 1px solid llccc;
-    font-family: "Sans serif";
-    border-radius: 5px;
-    padding: 10px;
+    display: block;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    height: 3.5rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 18px;
-    box-sizing: border-box;
+    padding: 0 1rem;
+    box-shadow: none ;
+    width: 100%;
+}
+.textbox:focus{
+    outline: none;
+}
+.textbox::placeholder{
+    color: rgba(255, 255, 255, 0.8);
 }
 
-
-
+.volunteer-btn{
+    text-align: center;
+    width: fit-content;
+    padding: 1rem 3rem;
+    background: #fff;
+    /* border: 1px solid #fff; */
+    color: #000;
+    transition: ease-in-out 0.35s;
+}
+.volunteer-btn:hover{
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.8);
+}
 
