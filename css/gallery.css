@@ -58,12 +58,12 @@ main {
 }
 .card {
     position: relative;
-    width: calc((120% / 3) - 20px); /*This Would Help to adjust the width so that we will have only 3 cards per line/row*/
+    width: calc((120% / 3) - 20px); 
     height: 350px;
     border-radius: 0px;
     overflow: hidden;
     display: flex;
-    flex-direction: row; /* Use column to align items vertically */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 0px;

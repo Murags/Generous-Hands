@@ -46,20 +46,38 @@
     animation: moveInRight 1.5s ease-in;
 }
 
-/* .founders{
-    margin-top: 20px;
-    background-color: whitesmoke;
-    display: flex;
-    flex-flow: column wrap;
-}
-
- */
+.orginfo {
+    text-align: center; 
+    line-height: 1.6; 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .orginfo div {
+    margin-bottom: 20px; 
+  }
+  
+  .orginfo strong {
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 1.2em; 
+    color: #333; 
+  }
+  
  .founders {
     margin-top: 20px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin-left: 330px;
 }
 
 .founder_pair {
@@ -70,6 +88,7 @@
 
 .founder_pair img {
     margin-right: 20px;
+    border-radius: 52%;
 }
 
 .founder_text {

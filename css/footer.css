@@ -50,6 +50,9 @@ svg {
    
     margin-top: 0px;
 }
+.social_icons a:hover svg {
+    fill: rgb(245, 141, 5); 
+}
 .footer_bottom {
     text-align: center;
     width: 100%;
