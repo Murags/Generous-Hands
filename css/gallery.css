@@ -26,9 +26,21 @@
     margin-top: 30px;
     padding: 5px 20px;
 }
-.hero-text{
-    font-family: "Dosis";
-    font-size: 50px;
+.hero-text {
+    font-family: 'Dosis';
+  font-size: 50px;
+  animation: moveInBottom 1.5s ease-in;
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .card-images{
