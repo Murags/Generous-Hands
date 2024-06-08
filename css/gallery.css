@@ -39,26 +39,10 @@
     justify-content: center;
 }
 .card {
-<<<<<<< HEAD
-    position: relative;
-    width: calc((120% / 3) - 20px); 
-    height: 350px;
-    border-radius: 0px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0px;
-    margin-left: 0px;
-    
-=======
-
     flex: 1;
     height: auto;
     /* opacity: .9; */
     transition: ease-in 0.25s;
->>>>>>> 05adf3ddf5fa4c1e8e8ccd2f6dcb4056122f6cbe
 }
 
 .card:hover {
