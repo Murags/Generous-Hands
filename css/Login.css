@@ -1,5 +1,6 @@
 body{
     background-image: url("../Images/bg_7.jpg");
+    opacity: 0.4;
 }
 .form {
     margin-top: 250px;
@@ -15,6 +16,7 @@ body{
     width: 400px;
     max-width: 100%;
     padding: 15px;
+    opacity: 1;
     
   }
   
