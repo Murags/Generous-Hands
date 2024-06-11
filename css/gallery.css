@@ -26,9 +26,21 @@
     margin-top: 30px;
     padding: 5px 20px;
 }
-.hero-text{
-    font-family: "Dosis";
-    font-size: 50px;
+.hero-text {
+    font-family: 'Dosis';
+  font-size: 50px;
+  animation: moveInBottom 1.5s ease-in;
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .card-images{
@@ -39,26 +51,10 @@
     justify-content: center;
 }
 .card {
-<<<<<<< HEAD
-    position: relative;
-    width: calc((120% / 3) - 20px); 
-    height: 350px;
-    border-radius: 0px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0px;
-    margin-left: 0px;
-    
-=======
-
     flex: 1;
     height: auto;
     /* opacity: .9; */
     transition: ease-in 0.25s;
->>>>>>> 05adf3ddf5fa4c1e8e8ccd2f6dcb4056122f6cbe
 }
 
 .card:hover {
