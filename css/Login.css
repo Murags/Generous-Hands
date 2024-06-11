@@ -1,8 +1,83 @@
-body{
-    background-image: url("../Images/bg_7.jpg");
-    opacity: 0.4;
+/* CSS for the login modal form */
+.modal2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 0px;
 }
-.form {
+
+.modal2-content {
+  position: relative;
+  background-color: #f9f9f9;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 400px;
+  margin-left: 500px;
+  margin-top: 400px;
+}
+
+.modal2-content form-login {
+  margin-top: 20px;
+}
+
+.modal2-content .form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal2-content .form-login input[type="email"],
+.modal2-content .form-login input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.modal2-content .form-login button[type="button"] {
+  background-color: #ff7700e8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal2-content .form-login button[type="button"]:hover {
+  background-color: #ff6a00;
+}
+
+.modal2-content .close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #ff4000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -9px;
+  margin-right: -10px;
+  margin-bottom: 0px;
+}
+
+.modal2-content .close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 
+.form-login {
     margin-top: 250px;
     margin-left: 540px;
     background-color: white;
@@ -30,7 +105,7 @@ body{
     margin-bottom: 0.5em;
   }
   
-  .form--input {
+  .form--input-login{
     width: 100%;
     margin-bottom: 1.25em;
     height: 40px;
@@ -41,13 +116,13 @@ body{
     outline: none;
   }
   
-  .form--input:focus {
+  .form--input-login:focus {
     border: 1px solid rgb(0, 0, 0);
     outline: none;
   }
 
   
-  .form--submit {
+  .form--submit-login {
     width: 50%;
     padding: 0.625em;
     border-radius: 5px;
@@ -57,10 +132,10 @@ body{
     cursor: pointer;
   }
   
-  .form--submit:hover {
+  .form--submit-login:hover {
     color: #f86f2d;
     background-color: rgb(163, 57, 4);
     border: 1px dashed #f86f2d;
     cursor: pointer;
     transition: 0.5s;
-  }
+  } */

@@ -24,6 +24,8 @@
       href="https://icons.getbootstrap.com/icons/envelope-fill/"
     />
     <link rel="stylesheet" href="./css/signup.css"/>
+    <link rel="stylesheet" href="./css/Login.css"/>
+    
 
     <title>Generous hands</title>
 
@@ -87,6 +89,7 @@
                     <label for="okayToEmail" class="checkbox">
                       Subscribe To The Newsletter
                     </label>
+                    <label>Already A Member?<a href="#" id="login-into" style="color: black; font-weight:bolder;">Log In</a></label>
                 </div>
                 <button type="button" class="form--submit">
                     Sign Up
@@ -94,7 +97,21 @@
             </form>
           </div>
       </div>
-      
+
+        </div>
+      </div>
+      <!-- Below is the login modal form that will be displayed when the "Log In" hyperlink is clicked -->
+<div id="login-modal" class="modal2">
+  <div class="modal2-content">
+      <form class="form-login" id="login-form">
+        <span class="close">&times;</span>
+          <span class="login">Login In</span>
+          <input type="email" placeholder="Email address" class="form--input-login">
+          <input type="password" placeholder="Password" class="form--input-login">
+          <button type="button" class="form--submit-login"> Log In </button>
+      </form>
+  </div>
+</div>
         <div class="discover-cards">
           <div class="card">
             <div class="org-img"></div>
@@ -136,7 +153,7 @@
         <a href="./DiscoverUs.html" class="discover-btn"
           >Discover</a>
       </section>
-    </div>
+    </div><br><br>
     <footer class="footer_design">
       <div>
         <strong>Useful Links</strong>
@@ -233,6 +250,7 @@
       <div class="footer_bottom">&copy; 2024. All Rights Reserved.</div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
   </body>
   <script src="./js/navbar.js"></script>
 </html>
