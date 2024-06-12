@@ -23,8 +23,13 @@
       rel="stylesheet"
       href="https://icons.getbootstrap.com/icons/envelope-fill/"
     />
+    <link rel="stylesheet" href="./css/signup.css"/>
+    <link rel="stylesheet" href="./css/Login.css"/>
+    
 
     <title>Generous hands</title>
+
+    
   </head>
   <body>
     <div>
@@ -40,9 +45,11 @@
             <li><a href="./Gallery.html">Gallery</a></li>
             <li><a href="./AdminDashboard.html">Admin</a></li>
             <li><a href="./Donate.html">Donate</a></li>
+            <li><a href="#" id="signup-link">Sign Up</a></li>
           </ul>
         </nav>
       </section>
+      
       <section class="hero">
         <div class="hero-content">
           <h1 class="hero-text">Become the Change</h1>
@@ -65,6 +72,46 @@
             and be someone's hero
           </p>
         </div>
+<!-- Below is the signup and login form that will be displayed us a modal box-->
+        <div id="signup-modal" class="modal">
+          <div class="modal-content">
+              
+              <form class="form">
+                <span class="close">&times;</span>
+                <span class="signup">Sign Up</span>
+                <input type="text" placeholder="Username" class="form--input">
+                <input type="email" placeholder="Email address" class="form--input">
+                <input type="password" placeholder="Password" class="form--input">
+                <input type="password" placeholder="Confirm password" class="form--input">
+                
+                <div class="form--marketing">
+                    <input id="okayToEmail" type="checkbox">
+                    <label for="okayToEmail" class="checkbox">
+                      Subscribe To The Newsletter
+                    </label>
+                    <label>Already A Member?<a href="#" id="login-into" style="color: black; font-weight:bolder;">Log In</a></label>
+                </div>
+                <button type="button" class="form--submit">
+                    Sign Up
+                </button>
+            </form>
+          </div>
+      </div>
+
+        </div>
+      </div>
+      <!-- Below is the login modal form that will be displayed when the "Log In" hyperlink is clicked -->
+<div id="login-modal" class="modal2">
+  <div class="modal2-content">
+      <form class="form-login" id="login-form">
+        <span class="close">&times;</span>
+          <span class="login">Login In</span>
+          <input type="email" placeholder="Email address" class="form--input-login">
+          <input type="password" placeholder="Password" class="form--input-login">
+          <button type="button" class="form--submit-login"> Log In </button>
+      </form>
+  </div>
+</div>
         <div class="discover-cards">
           <div class="card">
             <div class="org-img"></div>
@@ -74,7 +121,7 @@
               donation can provide the essential food and care they desperately
               need. Together, we can make a difference. Donate now!
             </div>
-            <a href="./DiscoverUs.html" target="_blank" class="card-btn"
+            <a href="./DiscoverUs.html"  class="card-btn"
               >Read More</a
             >
           </div>
@@ -86,7 +133,7 @@
               provide the books, supplies, and opportunities they need to build
               a brighter future. Donate today and make a lasting impact!
             </div>
-            <a href="./DiscoverUs.html" target="_blank" class="card-btn"
+            <a href="./DiscoverUs.html"  class="card-btn"
               >Read More</a
             >
           </div>
@@ -98,16 +145,15 @@
               for a brighter tomorrow. Join us in building a better world.
               Donate now.
             </div>
-            <a href="./DiscoverUs.html" target="_blank" class="card-btn"
+            <a href="./DiscoverUs.html"  class="card-btn"
               >Read More</a
             >
           </div>
         </div>
-        <a href="./DiscoverUs.html" target="_blank" class="discover-btn"
-          >Discover</a
-        >
+        <a href="./DiscoverUs.html" class="discover-btn"
+          >Discover</a>
       </section>
-    </div>
+    </div><br><br>
     <footer class="footer_design">
       <div>
         <strong>Useful Links</strong>
@@ -117,9 +163,7 @@
           <li><a href="#">Donate</a></li>
           <li><a href="./About.html">About</a></li>
           <li><a href="./DiscoverUs.html">Discover</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Volunteer</a></li>
-          <li><a href="#">SignUp</a></li>
+          <li><a href="./Gallery.html">Gallery</a></li>
         </ul>
       </div>
       <div>
@@ -205,6 +249,8 @@
       </div>
       <div class="footer_bottom">&copy; 2024. All Rights Reserved.</div>
     </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
   </body>
   <script src="./js/navbar.js"></script>
 </html>
