@@ -31,9 +31,10 @@
 }
 
 .navbar .nav-elm{
+    font-size: 100%;
     position: fixed;
     z-index: 1000;
-    padding: 2rem;
+    padding: 2.5rem 1rem;
     width: 100%;
     height: 10vh;
     display: flex;
