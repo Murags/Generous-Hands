@@ -53,9 +53,13 @@
     color: #f86f2d;
 }
 .nav-links{
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.signup-li:hover{
+    color: #f86f2d;
 }
 .nav-links li .active{
     color: #f86f2d;

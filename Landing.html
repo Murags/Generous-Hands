@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" type="image/png" href="./Images/logo-bg.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -40,7 +41,7 @@
             <li><a href="./About.html">About</a></li>
             <li><a href="./DiscoverUs.html">Discover</a></li>
             <li><a href="./Gallery.html">Gallery</a></li>
-            <li><a href="#" id="signup-link">Sign Up</a></li>
+            <li class="signup-li" id="signup-link">Sign Up</li>
           </ul>
         </nav>
       </section>
@@ -51,7 +52,7 @@
           <h2 class="hero-text2">
             You want to see in the world with Manus liberalis
           </h2>
-          <a href="#" class="hero-btn">Donate Now</a>
+          <a href="./DiscoverUs.html" class="hero-btn">Donate Now</a>
         </div>
       </section>
       <section class="discover">
@@ -73,7 +74,7 @@
             <form class="form">
               <span class="close">&times;</span>
               <span class="signup">Sign Up</span>
-              <input type="text" placeholder="Username" class="form--input" />
+              <input type="text" placeholder="Organization Name" class="form--input" />
               <input
                 type="email"
                 placeholder="Email address"
@@ -109,25 +110,22 @@
           </div>
         </div>
 
-        <!-- </div>
-        </div> -->
-        <!-- Below is the login modal form that will be displayed when the "Log In" hyperlink is clicked -->
-        <div id="login-modal" class="modal2">
-          <div class="modal2-content">
-            <form class="form-login" id="login-form">
+        <div id="login-modal" class="modal">
+          <div class="modal-content">
+            <form class="form" id="login-form">
               <span class="close">&times;</span>
               <span class="login">Login In</span>
               <input
                 type="email"
                 placeholder="Email address"
-                class="form--input-login"
+                class="form--input"
               />
               <input
                 type="password"
                 placeholder="Password"
-                class="form--input-login"
+                class="form--input"
               />
-              <button type="button" class="form--submit-login">Log In</button>
+              <button type="button" class="form--submit">Log In</button>
             </form>
           </div>
         </div>

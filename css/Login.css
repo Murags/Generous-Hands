@@ -1,14 +1,8 @@
 /* CSS for the login modal form */
 .modal2 {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  justify-content: center;
-  align-items: center;
   width: 450px;
   height: 0px;
 }
@@ -74,68 +68,3 @@
   text-decoration: none;
   cursor: pointer;
 }
-
-
-/* 
-.form-login {
-    margin-top: 250px;
-    margin-left: 540px;
-    background-color: white;
-    padding: 3.125em;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 5px 5px 15px -1px rgba(0.5,0.4,0.3,0.5);
-    width: 400px;
-    max-width: 100%;
-    padding: 15px;
-    opacity: 1;
-    
-  }
-  
-  .login {
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: block;
-    font-weight: bold;
-    font-size: x-large;
-    margin-bottom: 0.5em;
-  }
-  
-  .form--input-login{
-    width: 100%;
-    margin-bottom: 1.25em;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    padding: 0.8em;
-    font-family: 'Inter', sans-serif;
-    outline: none;
-  }
-  
-  .form--input-login:focus {
-    border: 1px solid rgb(0, 0, 0);
-    outline: none;
-  }
-
-  
-  .form--submit-login {
-    width: 50%;
-    padding: 0.625em;
-    border-radius: 5px;
-    color: white;
-    background-color:#f86f2d;
-    border: 1px dashed #f86f2d;
-    cursor: pointer;
-  }
-  
-  .form--submit-login:hover {
-    color: #f86f2d;
-    background-color: rgb(163, 57, 4);
-    border: 1px dashed #f86f2d;
-    cursor: pointer;
-    transition: 0.5s;
-  } */

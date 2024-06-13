@@ -3,18 +3,13 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 100; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 34%;
+  top: 18%;
   width: 399px; /* Full width */
-  margin-left: 500px;
-  margin-top: 230px;
-  
 }
 
 /* Modal Content */
 .modal-content {
-  
-   /* 5% from the top, centered */
   padding: 10px;
   border: #ff4000;
   width: 400px;
