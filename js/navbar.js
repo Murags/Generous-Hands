@@ -13,5 +13,5 @@ window.addEventListener('scroll', ()=>{
 // Initialize with transparent navbar
 document.addEventListener('DOMContentLoaded', function() {
     nav.classList.add('transparent');
-  });
+});
 

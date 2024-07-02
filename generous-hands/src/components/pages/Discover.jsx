@@ -1,6 +1,12 @@
+import Navbar from "../Navbar";
+import Hero from "../Hero";
+
 const Discover = () =>{
     return(
-        <div className="discover">This is the discover page</div>
+        <div>
+            <Navbar/>
+            <Hero isHomePage={false} heroText="Discover"/>
+        </div>
     );
 }
 
