@@ -7,6 +7,7 @@ const Gallery = () =>{
         <div>
             <Navbar/>
             <Hero isHomePage={false} heroText="Gallery"/>
+
             <Footer/>
         </div>
     );
