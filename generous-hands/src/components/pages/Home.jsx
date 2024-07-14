@@ -31,10 +31,10 @@ const Home = () =>{
                 {firstThreeOrganizations.map(org => (
                     <Card
                     key={org.id}
+                    id={org.id}
                     imgSrc={org.imgSrc}
                     title={org.title}
                     description={org.description}
-                    link={org.link}
                     />
                 ))}
                 </div>

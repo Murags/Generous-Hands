@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ imgSrc, title, description, link }) => {
+const Card = ({ id, imgSrc, title, description}) => {
   return (
     <div className="card">
       <div className="org-img">
@@ -8,7 +8,7 @@ const Card = ({ imgSrc, title, description, link }) => {
       </div>
       <div className="org-title">{title}</div>
       <div className="org-description">{description}</div>
-      <a href={link} className="card-btn">Read More</a>
+      <a href={`/organization/${id}`} className="card-btn">Read More</a>
     </div>
   );
 };

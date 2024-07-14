@@ -1,4 +1,4 @@
-const donations = [
+let donations = [
     { donorName: "John Mwangi", item: "Clothes", quantity: 5, region: "Nairobi", location: { lat: -1.286389, lng: 36.817223 }, details: "5 bags of clothes", contact: "johnmwangi@example.com", category: "Clothing", date: "2024-01-15", pickupStatus: "Scheduled", deliveryStatus: "In Transit" },
     { donorName: "Jane Wanjiku", item: "Food", quantity: 10, region: "Mombasa", location: { lat: -4.043477, lng: 39.668206 }, details: "10 boxes of non-perishable food", contact: "janewanjiku@example.com", category: "Food", date: "2024-02-10", pickupStatus: "Completed", deliveryStatus: "Delivered" },
     { donorName: "Samuel Otieno", item: "Books", quantity: 20, region: "Kisumu", location: { lat: -0.091702, lng: 34.768028 }, details: "20 educational books", contact: "samuelotieno@example.com", category: "Books", date: "2024-03-05", pickupStatus: "Scheduled", deliveryStatus: "In Transit" },
