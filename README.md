@@ -19,16 +19,16 @@ To get started with Generous Hands, follow these steps:
    git clone https://github.com/Murags/Generous-Hands.git
    ```
 2. **Navigate into project folder:**
-   ```bash
-  cd Generous-Hands
+   ```
+    cd Generous-Hands
    ```
 3. **Install the dependencies:**
-   ```bash
-   npm install
+   ```
+    npm install
     ```
 4. **Start the development server:**
-   ```bash
-   npm start
+   ```
+    npm start
     ```
 
 ## Usage
