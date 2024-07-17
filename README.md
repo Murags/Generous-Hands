@@ -34,6 +34,17 @@ To get started with Generous Hands, follow these steps:
 ## Usage
 ![Generous Hands](./public/Images/LandingPage.png)
 ### User
+Discover Charitable Organizations: Users can navigate to the Discover Page to view a list of charitable organizations.
+
+Go to the Discover Page.
+![Generous Hands](./public/Images/DiscoverPage.png)
+Browse through the list of organizations.
+Read More About an Organization: Users can click on the "Read More" button to view detailed information about a specific organization.
+
+Click the Read More button on the Discover Page.
+![Generous Hands](./public/Images/OrgPage.png)
+View additional details about the organization.
+
 Donate Items: Users can navigate to the donation page, fill out the form with item details, and submit their donations.
 
 Go to the Donation Page.
@@ -44,9 +55,10 @@ Click Submit to complete your donation.
 ### Organization
 Sign Up: Organizations can sign up by providing their name, email, password, and contact information.
 
-
+![Generous Hands](./public/Images/SIgnup.png)
 Go to the Sign Up Page.
 Enter your organization’s name, email, password, and contact information.
+
 Click Sign Up to create your organization account.
 Dashboard: Organizations can manage their content and view donations through their dashboard.
 
