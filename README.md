@@ -3,7 +3,7 @@
 Generous Hands is a donation platform that connects individuals looking to donate physical items with organizations in need. The platform also provides admin functionalities for monitoring donations and an organization dashboard for managing content and tracking donations.
 
 ![Generous Hands](./public/Images/logo-bg.png) <!-- Main Image of the Project -->
-## Features
+## Featuresimage.png
 
 - **User Donation of Physical Items:** Users can easily donate items from their homes.
 - **Admin Monitoring of Donations:** Admins have tools to view and manage donations.
@@ -32,10 +32,12 @@ To get started with Generous Hands, follow these steps:
     ```
 
 ## Usage
+![Generous Hands](./public/Images/LandingPage.png)
 ### User
 Donate Items: Users can navigate to the donation page, fill out the form with item details, and submit their donations.
 
 Go to the Donation Page.
+![Generous Hands](./public/Images/DonatePage.png)
 Fill out the form with the item details.
 Click Submit to complete your donation.
 
@@ -51,12 +53,14 @@ Dashboard: Organizations can manage their content and view donations through the
 After signing up, log in to access the Organization Dashboard.
 Manage your content and view the donations associated with your organization.
 
+![Generous Hands](./public/Images/OrganizationDash.png)
+
 ### Admin
 Monitor Donations: Admins can view and manage all donations made through the platform.
 
-
 Log in as an admin to access the Admin Monitoring Page.
 View and manage donations from the admin panel.
+![Generous Hands](./public/Images/AdminDash.png)
 
 ## Technologies
 Generous Hands is built using:
