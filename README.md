@@ -45,7 +45,7 @@ Click the Read More button on the Discover Page.
 ![Generous Hands](./public/Images/OrgPage.png)
 View additional details about the organization.
 
-Donate Items: Users can navigate to the donation page, fill out the form with item details, and submit their donations.
+Donate Items: Users can navigate to the donation page by clicking the donate button at the bottom of the page, fill out the form with item details, and submit their donations.
 
 Go to the Donation Page.
 ![Generous Hands](./public/Images/DonatePage.png)
