@@ -228,10 +228,14 @@ a{
 }
 .card {
   /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   flex: 1;
   min-width: 30%;
   max-width: 30%;
-  height: 28rem;
+  height: 26rem;
+  margin-bottom: 1.5rem;
 }
 
 .card .org-img {
@@ -1137,6 +1141,21 @@ svg {
   flex: 1;
   position: relative;
 }
+.btn--back {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f86f2d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn--back:hover {
+  background-color: #d85b20;
+}
+
 .form__input {
   display: block;
   font-family: inherit;
@@ -1300,18 +1319,43 @@ svg {
 }
 .topbar {
   background-color: white;
-  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: .5rem 0;
   flex-shrink: 0;
-  /* z-index: 100; */
   box-shadow: 0px 2px 5px 1px rgba(26, 24, 24, 0.3);
+  position: fixed;
+  min-height: 2%;
+  max-height: 12%;
+  right: 0rem;
+  left: 0;
+  z-index: 10000;
 }
 
 .topbar .profile-icon {
   cursor: pointer;
+}
+.dash-logo {
+  margin-left: 1.5rem;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-logo-img {
+  width: 5rem;
+  height: 100%;
+  background-image: url("../../Images/logo-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+.topbar .profile-icon{
+  margin-right: 2rem;
 }
 .container {
   height: 100%;
@@ -1319,28 +1363,19 @@ svg {
   flex-direction: row;
   background-color: whitesmoke;
 }
+
 .sidebar {
-  font-size: 1rem;
-  margin: 1rem 0 1rem 0.5rem;
-  border-radius: 1rem;
-  border-top: none;
-  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
+  margin-left: .5rem;
+  margin-top: 6%;
   background-color: #f86f2d;
   color: white;
-  flex: 0.2;
-  padding: 2rem 1rem;
-  flex-shrink: 0;
-}
-
-.logo {
-  color: #f86f2d;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.logo i {
-  margin-right: 5px;
+  width: 20%;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  position: fixed;
 }
 
 .menu {
@@ -1375,19 +1410,19 @@ svg {
   visibility: hidden;
 }
 
-.content {
+.dash-content {
   /* border: 2px solid red; */
   overflow-y: scroll;
-  margin: 0 2rem;
-  /* justify-content: center; */
-  align-items: center;
-  padding: 2rem 0.5rem;
+  margin-left: 22%;
+  margin-top: 6%;
+  /* align-items: center; */
+  padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   flex: 1;
   background-color: whitesmoke;
 }
-.content::-webkit-scrollbar {
+.dash-content::-webkit-scrollbar {
   display: none;
 }
 #MapsContent{
@@ -1591,8 +1626,6 @@ svg {
   color: #9f47ff;
 }
 
-/* styles.css */
-
 /* Existing styles remain unchanged */
 #AnalyticsContent{
   display: flex;
@@ -1604,19 +1637,19 @@ svg {
   /* border: 2px solid red; */
 }
 .region-summaries{
-  width: 56%;
+  width: 58%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   float: left;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 .analytics-container {
   width: 40%;
   float: right;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .map-container h3{
   margin-left: 1rem;
@@ -1649,5 +1682,255 @@ svg {
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
+}
+
+/*Org dash css*/
+
+.statsCards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.statCard {
+    color: #f5faff;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+}
+.statCard h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#donationsTotal{
+    background: linear-gradient(to bottom right, #165ed1, #73a7f0);
+    color: white;
+}
+#thankyous{
+    background: linear-gradient(to bottom right, #b83a4f, #e08c9e);
+    color: white;
+}
+#most-items{
+    background: linear-gradient(to bottom right, #009966, #49d5a8);
+}
+#monthly{
+    background: linear-gradient(to bottom right, #f96e27, #eea45d);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+}
+.charts{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 2rem;
+}
+.graphChart-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: white;
+  flex: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+.pieChart-container{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="file"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #f86f2d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #e75a1b;
+}
+
+.thank-you-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.thank-you-form textarea {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.thank-you-form button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  background-color: #f86f2d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.thank-you-form button:hover {
+  background-color: #e75a1b;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Modal css*/
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.modal-submit-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f86f2d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-submit-button:hover {
+  background-color: #d85b20;
+}
+
+.modal-switch {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-switch button {
+  background: none;
+  border: none;
+  color: #f86f2d;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-switch button:hover {
+  text-decoration: underline;
 }
 

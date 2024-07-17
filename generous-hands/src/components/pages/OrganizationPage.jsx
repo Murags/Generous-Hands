@@ -111,10 +111,14 @@ const OrganizationPage = () => {
             />
 
             <div className="cta__content">
-              <h2 className="heading-secondary">Lorem ipsum dolor sit.</h2>
+              <h2 className="heading-secondary">
+                Support Our Mission for Good.
+              </h2>
               <p className="cta__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Together we can make a lasting impact on the lives of those who
+                need it most.
               </p>
+
               <a
                 href={`/organization/${id}/donate`}
                 className="btn btn--orange"

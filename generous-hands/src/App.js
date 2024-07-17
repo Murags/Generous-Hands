@@ -7,7 +7,7 @@ import About from './components/pages/About';
 import Dashboard from './components/pages/Dashboard/Dashboard';
 import OrganizationPage from './components/pages/OrganizationPage';
 import Donate from './components/pages/Donate';
-
+import OrgDashboard from './components/pages/OrgDashBoard/OrgDash';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <Route path='/dashboard' element={<Dashboard />}></Route>
       <Route path="/organization/:id" element={<OrganizationPage />} />
       <Route path='/organization/:id/donate' element={<Donate />} />
+      <Route path='/organization/dashboard' element={<OrgDashboard />} />
     </Routes>
     </BrowserRouter>
   );

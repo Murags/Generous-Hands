@@ -12,13 +12,18 @@ function Dashboard() {
   const handleNavClick = (section) => {
     setActiveSection(section);
   };
+  const buttons = [
+    { label: 'Analytics', icon: 'fa-chart-line' },
+    { label: 'Maps', icon: 'fa-map-marker-alt' },
+    { label: 'Donation', icon: 'fa-th-list' },
+  ];
 
   return (
     <div className="body-container">
       <Topbar />
       <div className="container">
-        <Sidebar onNavClick={handleNavClick} activeNavItem={activeSection} />
-        <main className="content">
+        <Sidebar buttons={buttons} onNavClick={handleNavClick} activeNavItem={activeSection} />
+        <main className="dash-content">
           {activeSection === 'Analytics' && <AnalyticsContent />}
           {activeSection === 'Maps' && <MapsContent />}
           {activeSection === 'Donation' && <DonationContent />}

@@ -1,15 +1,15 @@
 import Navbar from "../Navbar";
 import Hero from "../Hero";
 import Footer from "../Footer";
-const About = () =>{
-    return(
-        <div>
-            <Navbar/>
-            <Hero isHomePage={false} heroText="About"/>
-            <section class="about">
-        <div class="about-content">
-          <div class="staff-img"></div>
-          <section class="orginfo">
+const About = () => {
+  return (
+    <div>
+      <Navbar />
+      <Hero isHomePage={false} heroText="About" />
+      <section className="about">
+        <div className="about-content">
+          <div className="staff-img"></div>
+          <section className="orginfo">
             <div>
               <strong>Generous Hands</strong>Where compassion meets action. At
               Generous Hands, we are dedicated to creating a platform that
@@ -26,7 +26,7 @@ const About = () =>{
               active participation in NGO activities and charity events
             </div>
           </section>
-          <section class="orginfo">
+          <section className="orginfo">
             <div>
               <strong>Mission Statement</strong>
               Our mission is to bridge the gap between NGOs and the community by
@@ -38,7 +38,6 @@ const About = () =>{
             </div>
             <div>
               <strong> Why Choose Generous Hands</strong>
-
               At Generous Hands, we believe that everyone has the power to make
               a difference. Our platform is designed to make it easy for you to
               find and participate in charitable activities that align with your
@@ -51,57 +50,59 @@ const About = () =>{
               difference, together.
             </div>
           </section>
-          <div class="staff-img"></div>
+          <div className="staff-img"></div>
         </div>
       </section>
-      <section class="founders-section">
+      <section className="founders-section">
         <h2>Our Founders</h2>
         <p>
-          Generous Hands was founded by a visionary team united by their passion for making a positive impact.
-          With diverse backgrounds in social work, technology, and community development, they created this platform
-          to empower people to support meaningful causes.Their dedication to fostering generosity and compassion drives
-          our mission to build a better, kinder world.
+          Generous Hands was founded by a visionary team united by their passion
+          for making a positive impact. With diverse backgrounds in social work,
+          technology, and community development, they created this platform to
+          empower people to support meaningful causes.Their dedication to
+          fostering generosity and compassion drives our mission to build a
+          better, kinder world.
         </p>
-        <div class="founders">
-          <div class="founder_pair">
-            <div class="img-container">
+        <div className="founders">
+          <div className="founder_pair">
+            <div className="img-container">
               <img
                 src="./Images/murags.jpg"
                 alt="Dennis Murage CTO & c0-founder"
               />
             </div>
-            <div class="founder_text">
-              <span class="founder-name">Dennis Murage</span> Visionary CEO and
+            <div className="founder_text">
+              <span className="founder-name">Dennis Murage</span> Visionary CEO and
               Co-Founder of Generous Hands. Pioneering change and leading with
               passion.
             </div>
           </div>
-          <div class="founder_pair">
-            <div class="img-container">
+          <div className="founder_pair">
+            <div className="img-container">
               <img src="./Images/bhavin.jpg" alt="Bhavin co-founder" />
             </div>
-            <div class="founder_text">
-              <span class="founder-name">Bhavin Mepani</span> Dynamic CEO and
+            <div className="founder_text">
+              <span className="founder-name">Bhavin Mepani</span> Dynamic CEO and
               Co-founder of Generous Hands. Mastermind behind seamless
               operations, ensuring every aspect runs smoothly.
             </div>
           </div>
-          <div class="founder_pair">
-            <div class="img-container">
+          <div className="founder_pair">
+            <div className="img-container">
               <img src="./Images/austin.jpg" alt="Austin CTO " />
             </div>
-            <div class="founder_text">
-              <span class="founder-name">Austin Kimathi</span> Innovative CTO of
+            <div className="founder_text">
+              <span className="founder-name">Austin Kimathi</span> Innovative CTO of
               Generous Hands. The tech genius driving cutting-edge solutions and
               technological advancements.
             </div>
           </div>
-          <div class="founder_pair">
-            <div class="img-container">
+          <div className="founder_pair">
+            <div className="img-container">
               <img src="./Images/dhruvin.jpg" alt="Dhruvin CFO" />
             </div>
-            <div class="founder_text">
-              <span class="founder-name">Dhruvin Bhudia</span> Strategic CFO of
+            <div className="founder_text">
+              <span className="founder-name">Dhruvin Bhudia</span> Strategic CFO of
               Generous Hands. Financial wizard, ensuring the company's fiscal
               strength and growth.
             </div>
@@ -109,9 +110,8 @@ const About = () =>{
         </div>
       </section>
       <Footer />
-
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default About;

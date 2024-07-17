@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Sidebar({ onNavClick, activeNavItem }) {
+function Sidebar({ buttons, onNavClick, activeNavItem }) {
   const navigate = useNavigate();
 
   const handleNavClick = (navItem) => {
@@ -15,15 +15,15 @@ function Sidebar({ onNavClick, activeNavItem }) {
   return (
     <div className="sidebar">
       <ul className="menu">
-        <li className={activeNavItem === 'Analytics' ? 'active-dash' : ''} onClick={() => handleNavClick('Analytics')}>
-          <i className="fas fa-chart-line"></i>Analytics
-        </li>
-        <li className={activeNavItem === 'Maps' ? 'active-dash' : ''} onClick={() => handleNavClick('Maps')}>
-          <i className="fas fa-map-marker-alt"></i>Maps
-        </li>
-        <li className={activeNavItem === 'Donation' ? 'active-dash' : ''} onClick={() => handleNavClick('Donation')}>
-          <i className="fas fa-th-list"></i>Donation
-        </li>
+        {buttons.map((button) => (
+          <li
+            key={button.label}
+            className={activeNavItem === button.label ? 'active-dash' : ''}
+            onClick={() => handleNavClick(button.label)}
+          >
+            <i className={`fas ${button.icon}`}></i>{button.label}
+          </li>
+        ))}
         <li className={activeNavItem === 'Logout' ? 'active-dash' : ''} onClick={() => handleNavClick('Logout')}>
           <i className="fas fa-sign-out-alt"></i>Logout
         </li>
@@ -33,4 +33,3 @@ function Sidebar({ onNavClick, activeNavItem }) {
 }
 
 export default Sidebar;
-

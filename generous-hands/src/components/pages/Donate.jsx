@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import donations from './Dashboard/data';
 
 const Donate = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,6 +40,10 @@ const Donate = () => {
     alert('Donation submitted successfully!');
   };
 
+  const handleBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="donate-body">
       <main className="main">
@@ -45,6 +51,7 @@ const Donate = () => {
           <div className="row">
             <div className="book">
               <div className="book__form">
+                <button className="btn btn--back" onClick={handleBack}>Back</button>
                 <form className="form" id="donating-form" onSubmit={handleSubmit}>
                   <div className="u-margin-bottom-medium">
                     <h2 className="heading-secondary">Start donating now</h2>
